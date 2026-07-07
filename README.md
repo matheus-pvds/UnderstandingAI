@@ -2,6 +2,7 @@
 ## Acesse a aplicação
 
 **[Entendendo IA Supervisionada](https://entendendo-ia.streamlit.app/)**
+<br>
 **[Entendendo IA Não supervisionada]([https://entendendo-ia.streamlit.app/](https://entendendo-ia-naosupervisionada.streamlit.app/))**
 Aplicação web educacional, construída em Python com Streamlit, que mostra de forma visual e interativa como funcionam os modelos de Aprendizado Supervisionado.
 Disponível aqui
