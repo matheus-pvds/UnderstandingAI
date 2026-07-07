@@ -1,14 +1,13 @@
 # UnderstandingAI: Laboratório Virtual de IA Supervisionada
 ## Acesse a aplicação
 
-**[Entendendo IA](https://entendendo-ia.streamlit.app/)**
-
+**[Entendendo IA Supervisionada](https://entendendo-ia.streamlit.app/)**
+**[Entendendo IA Não supervisionada]([https://entendendo-ia.streamlit.app/](https://entendendo-ia-naosupervisionada.streamlit.app/))**
 Aplicação web educacional, construída em Python com Streamlit, que mostra de forma visual e interativa como funcionam os modelos de Aprendizado Supervisionado.
 Disponível aqui
 
 O objetivo não é criar um sistema de previsão, mas sim uma ferramenta de ensino: o usuário acompanha cada etapa do processo, do carregamento dos dados até a previsão final, observando o modelo aprender passo a passo, como em um laboratório virtual.
 
-O público-alvo são estudantes iniciantes, que nunca tiveram contato com Machine Learning. Por isso, toda a interface usa linguagem simples, cartões explicativos, animações suaves e visualizações em cada etapa.
 
 ## Principais funcionalidades
 
