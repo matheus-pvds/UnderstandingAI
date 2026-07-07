@@ -312,35 +312,58 @@ def classe_positiva():
             return c
     return None
 
-
 # ----------------------------------------------------------------------------
 # Barra lateral: fonte dos dados
 # ----------------------------------------------------------------------------
 with st.sidebar:
     st.header("📂 Fonte dos dados")
+
     st.markdown(
-        f"Arquivo em uso: **{st.session_state.origem}**\n\n"
-        f"Linhas: **{len(DADOS)}** | Colunas: **{len(DADOS.columns)}**"
+        f"""
+**Arquivo em uso:** `{st.session_state.origem}`
+
+**Linhas:** {len(DADOS)}
+**Colunas:** {len(DADOS.columns)}
+"""
     )
-    st.caption(
-        "O laboratório lê o CSV e descobre sozinho o papel de cada coluna. "
-        "Quer experimentar com outros dados? Envie um CSV abaixo."
+
+    st.info(
+        "Você pode utilizar o conjunto de dados padrão do laboratório ou experimentar com outro arquivo CSV."
     )
-    enviado = st.file_uploader("Enviar outro CSV", type=["csv"])
+
+    st.markdown(
+        """
+### 📥 Baixar o conjunto de dados
+
+Caso deseje utilizar o mesmo conjunto de dados apresentado neste laboratório, faça o download do arquivo **alunos.csv** no GitHub:
+
+🔗 https://github.com/suzanasvm/UnderstandingAI/blob/main/alunos.csv
+
+Depois de baixar o arquivo, envie-o utilizando o campo abaixo.
+"""
+    )
+
+    enviado = st.file_uploader(
+        "Enviar um arquivo CSV",
+        type=["csv"],
+        help="Selecione um arquivo CSV para substituir a base de dados do laboratório."
+    )
+
     if enviado is not None and st.session_state.origem != enviado.name:
         try:
             novo = pd.read_csv(enviado)
             trocar_dados(novo, enviado.name)
-            st.success(f"Dados de {enviado.name} carregados!")
+            st.success(f"Dados de {enviado.name} carregados com sucesso!")
             st.rerun()
         except Exception as erro:
-            st.error(f"Não consegui ler esse CSV: {erro}")
+            st.error(f"Não foi possível ler o arquivo CSV: {erro}")
+
     if st.session_state.origem != ARQUIVO_CSV_PADRAO.name:
-        if st.button("↩️ Voltar ao CSV original"):
+        st.divider()
+
+        if st.button("↩️ Voltar ao CSV original", use_container_width=True):
             trocar_dados(carregar_csv_padrao(), ARQUIVO_CSV_PADRAO.name)
             st.rerun()
-
-
 # ----------------------------------------------------------------------------
 # Cabecalho
 # ----------------------------------------------------------------------------
