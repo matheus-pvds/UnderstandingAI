@@ -5,8 +5,7 @@
 <br>
 **[Entendendo IA Não supervisionada](https://entendendo-ia-naosupervisionada.streamlit.app/)**
 <br>
-Aplicação web educacional, construída em Python com Streamlit, que mostra de forma visual e interativa como funcionam os modelos de Aprendizado Supervisionado.
-Disponível aqui
+Aplicação web educacional, construída em Python com Streamlit, que mostra de forma visual e interativa como funcionam os modelos de Aprendizado de Máquina.
 
 O objetivo não é criar um sistema de previsão, mas sim uma ferramenta de ensino: o usuário acompanha cada etapa do processo, do carregamento dos dados até a previsão final, observando o modelo aprender passo a passo, como em um laboratório virtual.
 
@@ -19,25 +18,6 @@ O objetivo não é criar um sistema de previsão, mas sim uma ferramenta de ensi
 - Funciona com qualquer CSV: qualquer assunto, qualquer quantidade de linhas e qualquer quantidade de features
 - Seleção interativa das features que o modelo poderá usar
 - Divisão dos dados em treino e teste com slider de porcentagem e sorteio dos grupos
-- Treinamento de uma Árvore de Decisão com animação da árvore sendo construída nível por nível
-- Gráfico de importância das features após o treinamento
-- Avaliação do modelo em dados nunca vistos, com tabela de acertos e erros e cálculo da acurácia
-- Playground de previsão: o usuário cria um exemplo novo com sliders e vê o caminho de decisão da árvore explicado pergunta por pergunta
-- Envio de um novo CSV pela barra lateral, com adaptação automática de toda a interface
-
-## As 6 etapas do laboratório
-
-1. Introdução. Cartões animados explicam, em linguagem simples, o que é IA, o que é Machine Learning, o que é Aprendizado Supervisionado, o que são exemplos rotulados e o que significa treinar um modelo.
-
-2. Os dados. O laboratório mostra o que detectou no CSV, exibe a tabela completa com cores indicando o papel de cada coluna (azul para features, amarelo para label, cinza para colunas ignoradas) e apresenta um gráfico de dispersão para o estudante enxergar os padrões. O usuário escolhe quais features utilizar.
-
-3. Divisão treino e teste. Um slider controla a porcentagem de dados usada no treinamento. Os registros de cada grupo aparecem como etiquetas animadas, e um botão permite sortear a divisão novamente.
-
-4. Treinamento do modelo. O usuário escolhe o algoritmo (Árvore de Decisão), define a profundidade máxima e assiste à árvore sendo construída nível por nível, como se o modelo estivesse aprendendo em tempo real. Ao final, um gráfico mostra quais features pesaram mais na decisão.
-
-5. Avaliação. O modelo recebe os exemplos do grupo de teste, que ele nunca viu, e suas previsões são comparadas com a realidade. A acurácia é exibida junto com mensagens didáticas que incentivam a experimentação.
-
-6. Faça uma previsão. O estudante inventa um exemplo novo usando sliders (com limites calculados a partir dos valores reais do CSV) e vê a previsão do modelo, o grau de confiança e o caminho completo da decisão, explicado pergunta por pergunta.
 
 ## Como o laboratório entende qualquer CSV
 
@@ -110,7 +90,7 @@ Nesse caso, a coluna Aluno é detectada como identificação, as três colunas n
 Ao percorrer o laboratório, o estudante entra em contato com os seguintes conceitos de Machine Learning:
 
 - Inteligência Artificial e Aprendizado de Máquina
-- Aprendizado supervisionado e exemplos rotulados
+- Aprendizado supervisionado e não supervisionado e exemplos rotulados
 - Features (entradas) e label (saída)
 - Divisão dos dados em treino e teste
 - Árvore de Decisão e como ela escolhe suas perguntas
