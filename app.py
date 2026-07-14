@@ -217,7 +217,7 @@ def barra_etapas():
 def botoes_navegacao(pode_avancar=True, aviso=""):
     st.divider()
     c1, c2, c3 = st.columns([1, 4, 1])
-    with c1:
+    with c1:pypy
         if st.session_state.etapa > 0:
             st.button("⬅️ Voltar", on_click=ir_para, args=(st.session_state.etapa - 1,), use_container_width=True)
     with c3:

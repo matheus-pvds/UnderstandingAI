@@ -1,5 +1,12 @@
 # Understanding AI — Virtual AI Learning Lab
 
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.0-FF4B4B?logo=streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=python&logoColor=white)
+![Deployed](https://img.shields.io/badge/Deployed-Streamlit_Cloud-FF4B4B?logo=streamlit&logoColor=white)
+
 An educational web application (Virtual AI Lab) that **visually teaches Machine Learning concepts** through interactive Streamlit apps. Deployed at [entendendo-ia.streamlit.app](https://entendendo-ia.streamlit.app).
 
 ## Apps
