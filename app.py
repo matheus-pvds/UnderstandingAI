@@ -36,9 +36,19 @@ st.markdown(
 
     html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
-    h1, h2, h3 { font-family: 'Fraunces', serif !important; color: #1d3b4a; }
+    h1, h2, h3 { font-family: 'Fraunces', serif !important; color: #1d3b4a !important; }
 
-    .stApp { background: linear-gradient(180deg, #f6fbfc 0%, #eef5f7 100%); }
+    p { color: #3f5b66 !important; }
+    
+    [data-testid="stSidebarContent"] :is(h1, h2, h3, p) { color: #ffffff !important; }
+
+    [data-testid="stBaseButton-primary"] :is(h1, h2, h3, p) { color: #ffffff !important; }
+
+    [data-testid="stBaseButton-secondary"] :is(h1, h2, h3, p) { color: #ffffff !important; }
+
+    .stApp { background: linear-gradient(180deg, #f6fbfc 0%, #eef5f7 100%) !important; }
+
+    .stCheckbox label p { color: #000000 !important; }
 
     .cartao {
         background: #ffffff;
